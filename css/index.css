@@ -1,0 +1,1640 @@
+/* 铺满 */
+* {
+	margin: 0;
+	padding: 0;
+}
+.over {position: fixed; left:0; top:0; width:100%; z-index:100;}
+.tempContainer {position:fixed; width:100%; margin-right:0px; margin-left:0px; text-align:center; z-index:101;}
+
+.left-bottom-icon{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: flex-end;
+	width: 100%;
+	height: 50%;
+	/* background-color: yellow; */
+}
+.left-bottom-icon-children1{
+	background: url(../img/indexImg/wechat.png) no-repeat;
+	background-size: 100%;
+	width: 10%;
+	height: 60%;
+}
+.left-bottom-icon-children2{
+	background: url(../img/indexImg/dingding.png) no-repeat;
+	background-size: 100%;
+	width: 10%;
+	height: 60%;
+}
+.left-bottom-icon-children3{
+	background: url(../img/indexImg/qq.png) no-repeat;
+	background-size: 100%;
+	width: 10%;
+	height: 60%;
+}
+.left-bottom-icon-children4{
+	background: url(../img/indexImg/github.png) no-repeat;
+	background-size: 100%;
+	width: 10%;
+	height: 60%;
+}
+.left-bottom-icon-children5{
+	background: url(../img/indexImg/gitee.png) no-repeat;
+	background-size: 100%;
+	width: 10%;
+	height: 60%;
+}
+
+/* 左侧联系图标悬停事件 */
+.left-bottom-icon-children1:hover{
+	filter: alpha(Opacity=50);-moz-opacity: 0.5;opacity: 0.5;
+}
+.left-bottom-icon-children2:hover{
+	filter: alpha(Opacity=50);-moz-opacity: 0.5;opacity: 0.5;
+}
+.left-bottom-icon-children3:hover{
+	filter: alpha(Opacity=50);-moz-opacity: 0.5;opacity: 0.5;
+}
+.left-bottom-icon-children4:hover{
+	filter: alpha(Opacity=50);-moz-opacity: 0.5;opacity: 0.5;
+}
+.left-bottom-icon-children5:hover{
+	filter: alpha(Opacity=50);-moz-opacity: 0.5;opacity: 0.5;
+}
+
+/* 首页右侧第一代子节点 */
+.children1 {
+	/* background-color: rgb(22, 99, 176); */
+	background-color: rgb(48, 129, 212);
+	transition: all 0.2s ease-in;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6%;
+	cursor:pointer;
+}
+.children2 {
+	background-color: rgb(45, 124, 153);
+	transition: all 0.2s ease-in;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6%;
+	cursor:pointer;
+}
+.children3 {
+	background-color: rgb(194, 7, 82);
+	transition: all 0.2s ease-in;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6%;
+	cursor:pointer;
+}
+.children4 {
+	background-color: rgb(57, 173, 95);
+	transition: all 0.2s ease-in;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6%;
+	cursor:pointer;
+}
+.children5 {
+	background-color: rgb(107, 105, 213);
+	transition: all 0.2s ease-in;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6%;
+	cursor:pointer;
+}
+.children6 {
+	background-color: rgb(39, 130, 134);
+	transition: all 0.2s ease-in;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6%;
+	cursor:pointer;
+}
+span:hover{
+	cursor:-ms-pointer;
+}
+/* 首页右侧第二代子节点 */
+.children1-img {
+	width: 100%;
+	height: 100%;
+	background: url(../img/indexImg/tx.png) no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: 43% 43%;
+	text-align: center;
+	font-size: 0rem;
+	font-weight: bolder;
+	color: white;
+}
+.children2-img {
+	width: 100%;
+	height: 100%;
+	background: url(../img/indexImg/ll.png) no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: 53% 53%;
+	text-align: center;
+	font-size: 0rem;
+	font-weight: bolder;
+	color: white;
+}
+.children3-img {
+	width: 100%;
+	height: 100%;
+	background: url(../img/indexImg/gn.png) no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: 46% 46%;
+	text-align: center;
+	font-size: 0rem;
+	font-weight: bolder;
+	color: white;
+}
+.children4-img {
+	width: 100%;
+	height: 100%;
+	background: url(../img/indexImg/bk.png) no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: 43% 43%;
+	text-align: center;
+	font-size: 0rem;
+	font-weight: bolder;
+	color: white;
+}
+.children5-img {
+width: 100%;
+	height: 100%;
+	background: url(../img/indexImg/dz.png) no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: 46% 46%;
+	text-align: center;
+	font-size: 0rem;
+	font-weight: bolder;
+	color: white;
+}
+.children6-img {
+	width: 100%;
+	height: 100%;
+	background: url(../img/indexImg/lx.png) no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: 46% 46%;
+	text-align: center;
+	font-size: 0rem;
+	font-weight: bolder;
+	color: white;
+}
+/* 首页右侧二代节点悬浮事件 */
+.children1-img:hover {
+/* 	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+	-webkit-transform: translate3d(0, 0px, -2px); */
+	/* transform: translate3d(0, 1px, -2px); */
+	animation: children1-hover 0.2s 1 linear forwards;
+	-moz-animation: children1-hover 0.2s 1 linear forwards;
+	-webkit-animation: children1-hover 0.2s 1 linear forwards;
+}
+.children2-img:hover {
+	animation: children2-hover 0.2s 1 linear forwards;
+	-moz-animation: children2-hover 0.2s 1 linear forwards;
+	-webkit-animation: children2-hover 0.2s 1 linear forwards;
+}
+.children3-img:hover {
+	transform: translate3d(0, 1px, -2px);
+	animation: children3-hover 0.2s 1 linear forwards;
+	-moz-animation: children3-hover 0.2s 1 linear forwards;
+	-webkit-animation: children3-hover 0.2s 1 linear forwards;
+}
+.children4-img:hover {
+	transform: translate3d(0, 1px, -2px);
+	animation: children4-hover 0.2s 1 linear forwards;
+	-moz-animation: children4-hover 0.2s 1 linear forwards;
+	-webkit-animation: children4-hover 0.2s 1 linear forwards;
+}
+.children5-img:hover {
+	transform: translate3d(0, 1px, -2px);
+	animation: children5-hover 0.2s 1 linear forwards;
+	-moz-animation: children5-hover 0.2s 1 linear forwards;
+	-webkit-animation: children5-hover 0.2s 1 linear forwards;
+}
+.children6-img:hover {
+	transform: translate3d(0, 1px, -2px);
+	animation: children6-hover 0.2s 1 linear forwards;
+	-moz-animation: children6-hover 0.2s 1 linear forwards;
+	-webkit-animation: children6-hover 0.2s 1 linear forwards;
+}
+/* 首页右侧二代节点悬浮事件触发函数 */
+@keyframes children1-hover {
+	0% {
+		background-size: 30% 30%;
+	}
+	20%{
+		background-size: 25% 25%;
+		font-size: .5rem;
+	}
+	50% {
+		background-size: 20% 20%;
+		font-size: .9rem;
+	}
+	100% {
+		/* background-size: 0% 0%; */
+		font-size: 1.4rem;
+		background: url(../img/indexImg/tx-b.png) no-repeat;
+		background-position-x: 130%;
+		background-position-y: 120%;
+		background-size: 57% 57%;
+	}
+}
+@keyframes children2-hover {
+	0% {
+		background-size: 30% 30%;
+	}
+	20%{
+		background-size: 25% 25%;
+		font-size: .5rem;
+	}
+	50% {
+		background-size: 20% 20%;
+		font-size: .9rem;
+	}
+	100% {
+		/* background-size: 0% 0%; */
+		font-size: 1.4rem;
+		background: url(../img/indexImg/ll-b.png) no-repeat;
+		background-position-x: 170%;
+		background-position-y: 160%;
+		background-size: 70% 70%;
+	}
+}
+@keyframes children3-hover {
+	0% {
+		background-size: 30% 30%;
+	}
+	20%{
+		background-size: 25% 25%;
+		font-size: .5rem;
+	}
+	50% {
+		background-size: 20% 20%;
+		font-size: .9rem;
+	}
+	100% {
+		/* background-size: 0% 0%; */
+		font-size: 1.4rem;
+		background: url(../img/indexImg/gn-b.png) no-repeat;
+		background-position-x: 135%;
+		background-position-y: 135%;
+		background-size: 57% 57%;
+	}
+}
+@keyframes children4-hover {
+	0% {
+		background-size: 30% 30%;
+	}
+	20%{
+		background-size: 25% 25%;
+		font-size: .5rem;
+	}
+	50% {
+		background-size: 20% 20%;
+		font-size: .9rem;
+	}
+	100% {
+		/* background-size: 0% 0%; */
+		font-size: 1.4rem;
+		background: url(../img/indexImg/bk-b.png) no-repeat;
+		background-position-x: 140%;
+		background-position-y: 140%;
+		background-size: 57% 57%;
+	}
+}
+@keyframes children5-hover {
+	0% {
+		background-size: 30% 30%;
+	}
+	20%{
+		background-size: 25% 25%;
+		font-size: .5rem;
+	}
+	50% {
+		background-size: 20% 20%;
+		font-size: .9rem;
+	}
+	100% {
+		/* background-size: 0% 0%; */
+		font-size: 1.4rem;
+		background: url(../img/indexImg/dz-b.png) no-repeat;
+		background-position-x: 135%;
+		background-position-y: 135%;
+		background-size: 57% 57%;
+	}
+}
+@keyframes children6-hover {
+	0% {
+		background-size: 30% 30%;
+	}
+	20%{
+		background-size: 25% 25%;
+		font-size: .5rem;
+	}
+	50% {
+		background-size: 20% 20%;
+		font-size: .9rem;
+	}
+	100% {
+		/* background-size: 0% 0%; */
+		font-size: 1.4rem;
+		background: url(../img/indexImg/lx-b.png) no-repeat;
+		background-position-x: 135%;
+		background-position-y: 135%;
+		background-size: 57% 57%;
+	}
+}
+
+/* 手机的样式 */
+@media screen and (max-width: 860px) {
+	body {
+		background-color: rgb(55, 56, 56);
+		background: url(../img/indexImg/bg-phone.jpg) no-repeat center center;
+		background-position-x: center;
+		background-position-y: bottom;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		-webkit-background-size: 100% 100%;
+		-moz-background-size: 100% 100%;
+		height: 100%;
+	}
+	/* 主体框 */
+	.parent {
+		background-color: rgba(55, 56, 56, 0.2);
+		/* background: #006400; */
+		display: flex;
+		display: -webkit-flex;
+		/* Safari */
+		display: -moz-flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		width: 100vw;
+		/* height: 100vh; */
+	}
+	/* 名片框 */
+	.main-left {
+		order: 1;
+		flex-grow: 0;
+		width: 75vw;
+		height: 58vh;
+		background-color: rgb(1, 3, 15);
+		margin-top: 18vw;
+		filter: alpha(Opacity=80);
+		-moz-opacity: 0.8;
+		opacity: 0.8;
+		border-radius: 2%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.left-top{
+		width: 70%;
+		height: 50%;
+		background: #19A7FD;
+		border: .5rem rgb(88,90,101) solid;
+		border-radius: 50%;
+		background: url(../img/indexImg/myself.jpeg);
+		background-size: 100% 100%;
+	}
+	/* 左侧图标 */
+	.left-bottom-content{
+		width: 100%;
+		height: 55%;
+		font-size: 4.6vw;
+	}
+	.left-bottom{
+		margin-top: -10vh;
+		width: 50vw;
+		height: 25vw;
+		/* background: wheat; */
+		color: white;
+		text-align: center;
+		font-size: 1.1rem;
+	}
+	/* 入口框 */
+	.main-right {
+		order: 2;
+		flex-grow: 0;
+		width: 75vw;
+		height: 58vw;
+		margin-top: 2.1vh;
+		margin-bottom: 26vw;
+		/* background-color: #1ABC9C; */
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	/* 入口框 */
+	.children-right {
+		width: 11.8vh;
+		height: 11.8vh;
+		line-height: 11.8vh;
+	}
+	
+	/* 简介 */
+	.about{
+		background-color: rgba(48, 129, 212, 0.33);
+		/*background-color: rgba(138, 19, 212, 0.5);*/
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		bottom: 0px;
+		color: white;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		/*解决ios上滑动不流畅*/
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 25px;
+	}
+	.about::-webkit-scrollbar {display:none}
+	
+	.about-children1{
+		/* background: #B2B2B2; */
+		width: 70vw;
+		height: 96vh;
+		margin: 5vh auto;
+	}
+	.about-children2{
+		/* background: #B2B2B2; */
+		width: 70vw;
+		height: 89vh;
+		margin: 1vh auto;
+	}
+	.about-left-top{
+		margin-top: 5vh;
+		float: left;
+		width: 50vw;
+		height: 50vw;
+		background: #19A7FD;
+		border: .5rem rgb(118, 165 ,209) solid;
+		border-radius: 50%;
+		background: url(../img/indexImg/myself.jpeg);
+		background-size: 100% 100%;
+	}
+	.about-right{
+		float: left;
+		font-size: 4vw;
+	}
+	.about-right p:first-child{
+		font-size: 6vw;
+	}
+	.about-children2-ch{
+		width: 100%;
+		height: 45%;
+		/* background-color: red; */
+		float: left;
+		margin-right: 4.9vh;
+		margin-bottom: 2vh;
+	}
+	.about-children2-ch table{
+		font-size: 4vw;
+	}
+	/* 履历 */
+	.resume{
+		background-color: rgba(76, 146, 170, 0.4);
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		bottom: 0px;
+		color: white;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		/*解决ios上滑动不流畅*/
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 25px;
+	}
+	.resume::-webkit-scrollbar {display:none}
+	.resume-children{
+		/* background: #B2B2B2; */
+		width: 80vw;
+		margin: 5vh auto;
+	}
+	.resume-children1{
+		/* background: #B2B2B2; */
+		width: 80vw;
+		height: 100vh;
+		margin: 5vh auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: left;
+		align-items: flex-start;
+	}
+	.resume-children2-ch{
+		width: 95%;
+		height: 65%;
+		/* background-color: red; */
+		float: left;
+		margin-right: 4.9vh;
+		margin-bottom: 2vh;
+	}
+	.resume-children2-ch p{
+		font-size: 4vw;
+	}
+	.comment-bubble {
+	   width: 8rem;
+	   height: 2rem;
+	   background: rgba(254, 254, 255, 0.9);
+	   position: absolute;
+	   margin-top: -3vh;
+	   margin-left: 9vw;
+	   font-size: 1.1rem;
+	   font-weight: 500;
+	   color: rgb(76, 145, 170);
+	   line-height: 2rem;
+	   text-align: center;
+	}
+	.resume-children2-ch:last-child{
+		margin-top: -10vh;
+	}
+	
+	/* 博客 */
+	.blog{
+		background-color: rgba(202, 45, 111, 0.3);
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		bottom: 0px;
+		color: white;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		/*解决ios上滑动不流畅*/
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 25px;
+	}
+	.blog::-webkit-scrollbar {display:none}
+	.blog-children{
+		/* background: #B2B2B2; */
+		width: 78vw;
+		margin: 5vh auto;
+	}
+	.blog-children1{
+		/* background: #B2B2B2; */
+		width: 78vw;
+		height: 99vh;
+		margin: 10vh auto;
+	}
+	.blog-children2-ch{
+		width:100%;
+		height: 27vh;
+		background-color: wheat;
+		/* border: 1px solid white; */
+		float: left;
+	}
+	
+	/* 博客导航 */
+	.blog1-model,.blog2-model,.blog3-model,.blog4-model,.blog5-model,.blog6-model,.blog7-model,.blog8-model,.blog9-model{
+		background:rgba(55, 56, 56, 0.7);
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.blog1-model div:first-child,.blog2-model div:first-child,.blog3-model div:first-child,.blog4-model div:first-child,.blog5-model div:first-child,.blog6-model div:first-child,.blog7-model div:first-child,.blog8-model div:first-child,.blog9-model div:first-child{
+		font-size: 3vh;
+	}
+	.blog1-model div:last-child,.blog2-model div:last-child,.blog3-model div:last-child,.blog4-model div:last-child,.blog5-model div:last-child,.blog6-model div:last-child,.blog7-model div:last-child,.blog8-model div:last-child,.blog9-model div:last-child{
+		font-size: 2vh;
+	}
+	
+	/* 联系我 */
+	.contact{
+		background-color: rgba(61, 148, 152, 0.4);
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		bottom: 0px;
+		color: white;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		/*解决ios上滑动不流畅*/
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 25px;
+	}
+	.contact::-webkit-scrollbar {display:none}
+	.contact-children{
+		/* background: #B2B2B2; */
+		width: 80vw;
+		margin: 5vh auto;
+	}
+	.contact-children1{
+		/* background: #B2B2B2; */
+		width: 80vw;
+		height: 70vh;
+		margin: 5vh auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: left;
+		align-items: flex-start;
+	}
+	.contact-children1 a,.contact-children1 a:hover{
+		text-decoration: none;
+		color: white;
+	}
+	.contact-children2-ch{
+		width: 95%;
+		height: 66%;
+		/* background-color: red; */
+		float: left;
+		margin-right: 4.9vh;
+		margin-bottom: 2vh;
+	}
+	.contact-children2-ch table{
+		font-size: 4.3vw;
+	}
+	.form-group input,.form-group textarea,.form-group button{
+		font-size: 4vw;
+	}
+	/* 地址 */
+	.address{
+		background-color: rgba(107, 105, 213, 0.3);
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		bottom: 0px;
+		color: white;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		/*解决ios上滑动不流畅*/
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 25px;
+	}
+	.address::-webkit-scrollbar {display:none}
+	.address-children{
+		/* background: #B2B2B2; */
+		width: 88vw;
+		margin: 5vh auto;
+	}
+	.address-children1{
+		/* background: #B2B2B2; */
+		width: 88vw;
+		height: 70vh;
+		margin: 5vh auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: left;
+		align-items: flex-start;
+	}
+	.address-children2-ch{
+		width: 100%;
+		height: 76%;
+		/* background-color: red; */
+		float: left;
+		margin-bottom: 2vh;
+	}
+}
+
+/* pc的样式 */
+@media screen and (min-width:860px) {
+	body {
+		background-color: rgb(55, 56, 56);
+		background: url(../img/indexImg/catalina.jpg) no-repeat center center;
+		background-position-x: center;
+		background-position-y: bottom;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		-webkit-background-size: 100% 100%;
+		-moz-background-size: 100% 100%;
+		height: 100%;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		/*解决ios上滑动不流畅*/
+		-webkit-overflow-scrolling: touch;
+	}
+	/* 主体框 */
+	.parent {
+		background-color: rgba(55, 56, 56, 0.3);
+		/* background: #006400; */
+		display: flex;
+		display: -webkit-flex;
+		/* Safari */
+		display: -moz-flex;
+		flex-flow: row wrap;
+		/* flex-direction: row; */
+		/* flex-wrap: wrap; */
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		width: 100%;
+		height: 100vh;
+	}
+	.parent::-webkit-scrollbar {display:none}
+	/* 名片框 */
+	.main-left {
+		order: 1;
+		width: 35vh;
+		height: 54.5vh;
+		position: relative;
+		background-color: rgb(1, 3, 15);
+		filter: alpha(Opacity=90);
+		-moz-opacity: 0.9;
+		opacity: 0.9;
+		border-radius: 2%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-around;
+		align-items: center;
+		
+	}
+	.left-top{
+		width: 25vh;
+		height: 25vh;
+		background: #19A7FD;
+		border: .5rem rgb(88,90,101) solid;
+		border-radius: 50%;
+		background: url(../img/indexImg/myself.jpeg) no-repeat center center;
+		background-size: 100% 100%;
+	}
+	/* 左侧图标 */
+	.left-bottom-content{
+		width: 100%;
+		height: 55%;
+		font-size: 2.3vh;
+	}
+	.left-bottom{
+		margin-top: -10vh;
+		width: 25vh;
+		height: 12vh;
+		/* background: wheat; */
+		color: white;
+		text-align: center;
+		font-size: 1.1rem;
+	}
+	/* 入口框 */
+	.main-right {
+		order: 2;
+		width: 35vh;
+		height: 57.9vh;
+		/* background-color: #1ABC9C; */
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		/* align-content: center; */
+	}
+	.div1 {
+		margin: 2vh;
+	}
+	/* 入口框 */
+	.children-right {
+		width: 15.9vh;
+		height: 15.9vh;
+		line-height: 15.9vh;
+	}
+	
+	/* 简介 */
+	.about{
+		background-color: rgba(48, 129, 212, 0.6);
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		bottom: 0px;
+		color: white;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		/*解决ios上滑动不流畅*/
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 25px;
+	}
+	.about::-webkit-scrollbar {display:none}
+	.about-children1,.about-children2{
+		/* background: #B2B2B2; */
+		width: 80vw;
+		height: 42vh;
+		margin: 8vh auto;
+	}
+	.about-right{
+		/* float: left; */
+		font-size: 2.2vh;
+	}
+	.about-right p:first-child{
+		font-size: 3vh;
+	}
+	.about-children2-ch table{
+		font-size: 2.2vh;
+	}
+	.about-left-top{
+		margin-top: 5vh;
+		float: left;
+		margin-right: 6vw;
+		width: 25vh;
+		height: 25vh;
+		background: #19A7FD;
+		border: .5rem rgb(118, 165 ,209) solid;
+		border-radius: 50%;
+		background: url(../img/indexImg/myself.jpeg);
+		background-size: 100% 100%;
+	}
+	.about-children2-ch{
+		width: 45%;
+		height: 98%;
+		/* background-color: red; */
+		float: left;
+		margin-right: 4.9vh;
+	}
+	
+	/* 履历 */
+	.resume{
+		background-color: rgba(76, 146, 170, 0.6);
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		bottom: 0px;
+		color: white;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		/*解决ios上滑动不流畅*/
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 25px;
+	}
+	.resume::-webkit-scrollbar {display:none}
+	.resume-children{
+		/* background: #B2B2B2; */
+		width: 80vw;
+		margin: 5vh auto;
+	}
+	.resume-children1{
+		/* background: #B2B2B2; */
+		width: 80vw;
+		height: 90vh;
+		margin: 5vh auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: left;
+		align-items: flex-start;
+	}
+	.resume-children2-ch{
+		width: 45%;
+		height: 80%;
+		/* background-color: red; */
+		float: left;
+		margin-right: 4.9vh;
+		margin-bottom: 2vh;
+	}
+	.resume-children2-ch p{
+		font-size: 2.4vh;
+	}
+	.comment-bubble{
+		width: 8rem;
+		height: 2rem;
+	    background: rgba(254, 254, 255, 0.9);
+	    position: absolute;
+	    margin-top: -3vh;
+	    margin-left: 4.6vw;
+	    color: rgb(76, 145, 170);
+		font-size: 1.1rem;
+		font-weight: 500;
+	    line-height: 2rem;
+	    text-align: center;
+	}
+	
+	/* 博客 */
+	.blog{
+		background-color: rgba(202, 45, 111, 0.6);
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		bottom: 0px;
+		color: white;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		/*解决ios上滑动不流畅*/
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 25px;
+	}
+	.blog::-webkit-scrollbar {display:none}
+	.blog-children{
+		/* background: #B2B2B2; */
+		width: 78vw;
+		margin: 5vh auto;
+	}
+	.blog-children1{
+		/* background: #B2B2B2; */
+		width: 78vw;
+		height: 90vh;
+		margin: 10vh auto;
+	}
+	.blog-children2-ch{
+		width:26vw;
+		height: 17vw;
+		background-color: wheat;
+		float: left;
+	}
+	/* 博客导航栏目悬停 */
+	.blog1:hover .blog1-model{
+		animation: blog1-fadeInUp 0.2s 1 linear forwards;
+		-moz-animation: blog1-fadeInUp 0.2s 1 linear forwards;
+		-webkit-animation: blog1-fadeInUp 0.2s 1 linear forwards;
+	}
+	@keyframes blog1-fadeInUp{
+		100% {
+			opacity: 1;
+			filter: alpha(opacity=1);
+		}
+	}
+	.blog1:hover .blog1-model div:first-child{
+		animation: blog1-first-child 0.1s 1 linear forwards;
+		-moz-animation: blog1-first-child 0.1s 1 linear forwards;
+		-webkit-animation: blog1-first-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog1-first-child{
+		100% {
+			font-size: 2vw;
+		}
+	}
+	.blog1:hover .blog1-model div:last-child{
+		animation: blog1-last-child 0.1s 1 linear forwards;
+		-moz-animation: blog1-last-child 0.1s 1 linear forwards;
+		-webkit-animation: blog1-last-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog1-last-child{
+		100% {
+			font-size: 1.5vw;
+		}
+	}
+	.blog2:hover .blog2-model{
+		animation: blog2-fadeInUp 0.2s 1 linear forwards;
+		-moz-animation: blog2-fadeInUp 0.2s 1 linear forwards;
+		-webkit-animation: blog2-fadeInUp 0.2s 1 linear forwards;
+	}
+	@keyframes blog2-fadeInUp{
+		100% {
+			opacity: 1;
+			filter: alpha(opacity=1);
+		}
+	}
+	.blog2:hover .blog2-model div:first-child{
+		animation: blog2-first-child 0.1s 1 linear forwards;
+		-moz-animation: blog2-first-child 0.1s 1 linear forwards;
+		-webkit-animation: blog2-first-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog2-first-child{
+		100% {
+			font-size: 2vw;
+		}
+	}
+	.blog2:hover .blog2-model div:last-child{
+		animation: blog2-last-child 0.1s 1 linear forwards;
+		-moz-animation: blog2-last-child 0.1s 1 linear forwards;
+		-webkit-animation: blog2-last-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog2-last-child{
+		100% {
+			font-size: 1.5vw;
+		}
+	}
+	.blog3:hover .blog3-model{
+		animation: blog3-fadeInUp 0.2s 1 linear forwards;
+		-moz-animation: blog3-fadeInUp 0.2s 1 linear forwards;
+		-webkit-animation: blog3-fadeInUp 0.2s 1 linear forwards;
+	}
+	@keyframes blog3-fadeInUp{
+		100% {
+			opacity: 1;
+			filter: alpha(opacity=1);
+		}
+	}
+	.blog3:hover .blog3-model div:first-child{
+		animation: blog3-first-child 0.1s 1 linear forwards;
+		-moz-animation: blog3-first-child 0.1s 1 linear forwards;
+		-webkit-animation: blog3-first-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog3-first-child{
+		100% {
+			font-size: 2vw;
+		}
+	}
+	.blog3:hover .blog3-model div:last-child{
+		animation: blog3-last-child 0.1s 1 linear forwards;
+		-moz-animation: blog3-last-child 0.1s 1 linear forwards;
+		-webkit-animation: blog3-last-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog3-last-child{
+		100% {
+			font-size: 1.5vw;
+		}
+	}
+	
+	.blog4:hover .blog4-model{
+		animation: blog4-fadeInUp 0.2s 1 linear forwards;
+		-moz-animation: blog4-fadeInUp 0.2s 1 linear forwards;
+		-webkit-animation: blog4-fadeInUp 0.2s 1 linear forwards;
+	}
+	@keyframes blog4-fadeInUp{
+		100% {
+			opacity: 1;
+			filter: alpha(opacity=1);
+		}
+	}
+	.blog4:hover .blog4-model div:first-child{
+		animation: blog4-first-child 0.1s 1 linear forwards;
+		-moz-animation: blog4-first-child 0.1s 1 linear forwards;
+		-webkit-animation: blog4-first-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog4-first-child{
+		100% {
+			font-size: 2vw;
+		}
+	}
+	
+	.blog4:hover .blog4-model div:last-child{
+		animation: blog4-last-child 0.1s 1 linear forwards;
+		-moz-animation: blog4-last-child 0.1s 1 linear forwards;
+		-webkit-animation: blog4-last-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog4-last-child{
+		100% {
+			font-size: 1.5vw;
+		}
+	}
+	
+	.blog5:hover .blog5-model{
+		animation: blog5-fadeInUp 0.2s 1 linear forwards;
+		-moz-animation: blog5-fadeInUp 0.2s 1 linear forwards;
+		-webkit-animation: blog5-fadeInUp 0.2s 1 linear forwards;
+	}
+	@keyframes blog5-fadeInUp{
+		100% {
+			opacity: 1;
+			filter: alpha(opacity=1);
+		}
+	}
+	.blog5:hover .blog5-model div:first-child{
+		animation: blog5-first-child 0.1s 1 linear forwards;
+		-moz-animation: blog5-first-child 0.1s 1 linear forwards;
+		-webkit-animation: blog5-first-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog5-first-child{
+		100% {
+			font-size: 2vw;
+		}
+	}
+	.blog5:hover .blog5-model div:last-child{
+		animation: blog5-last-child 0.1s 1 linear forwards;
+		-moz-animation: blog5-last-child 0.1s 1 linear forwards;
+		-webkit-animation: blog5-last-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog5-last-child{
+		100% {
+			font-size: 1.5vw;
+		}
+	}
+	
+	.blog6:hover .blog6-model{
+		animation: blog6-fadeInUp 0.2s 1 linear forwards;
+		-moz-animation: blog6-fadeInUp 0.2s 1 linear forwards;
+		-webkit-animation: blog6-fadeInUp 0.2s 1 linear forwards;
+	}
+	@keyframes blog6-fadeInUp{
+		100% {
+			opacity: 1;
+			filter: alpha(opacity=1);
+		}
+	}
+	.blog6:hover .blog6-model div:first-child{
+		animation: blog6-first-child 0.1s 1 linear forwards;
+		-moz-animation: blog6-first-child 0.1s 1 linear forwards;
+		-webkit-animation: blog6-first-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog6-first-child{
+		100% {
+			font-size: 2vw;
+		}
+	}
+	.blog6:hover .blog6-model div:last-child{
+		animation: blog6-last-child 0.1s 1 linear forwards;
+		-moz-animation: blog6-last-child 0.1s 1 linear forwards;
+		-webkit-animation: blog6-last-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog6-last-child{
+		100% {
+			font-size: 1.5vw;
+		}
+	}
+	.blog7:hover .blog7-model{
+		animation: blog7-fadeInUp 0.2s 1 linear forwards;
+		-moz-animation: blog7-fadeInUp 0.2s 1 linear forwards;
+		-webkit-animation: blog7-fadeInUp 0.2s 1 linear forwards;
+	}
+	@keyframes blog7-fadeInUp{
+		100% {
+			opacity: 1;
+			filter: alpha(opacity=1);
+		}
+	}
+	.blog7:hover .blog7-model div:first-child{
+		animation: blog7-first-child 0.1s 1 linear forwards;
+		-moz-animation: blog7-first-child 0.1s 1 linear forwards;
+		-webkit-animation: blog7-first-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog7-first-child{
+		100% {
+			font-size: 2vw;
+		}
+	}	
+	.blog7:hover .blog7-model div:last-child{
+		animation: blog7-last-child 0.1s 1 linear forwards;
+		-moz-animation: blog7-last-child 0.1s 1 linear forwards;
+		-webkit-animation: blog7-last-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog7-last-child{
+		100% {
+			font-size: 1.5vw;
+		}
+	}
+	.blog8:hover .blog8-model{
+		animation: blog8-fadeInUp 0.2s 1 linear forwards;
+		-moz-animation: blog8-fadeInUp 0.2s 1 linear forwards;
+		-webkit-animation: blog8-fadeInUp 0.2s 1 linear forwards;
+	}
+	@keyframes blog8-fadeInUp{
+		100% {
+			opacity: 1;
+			filter: alpha(opacity=1);
+		}
+	}
+	.blog8:hover .blog8-model div:first-child{
+		animation: blog8-first-child 0.1s 1 linear forwards;
+		-moz-animation: blog8-first-child 0.1s 1 linear forwards;
+		-webkit-animation: blog8-first-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog8-first-child{
+		100% {
+			font-size: 2vw;
+		}
+	}	
+	.blog8:hover .blog8-model div:last-child{
+		animation: blog8-last-child 0.1s 1 linear forwards;
+		-moz-animation: blog8-last-child 0.1s 1 linear forwards;
+		-webkit-animation: blog8-last-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog8-last-child{
+		100% {
+			font-size: 1.5vw;
+		}
+	}
+	.blog9:hover .blog9-model{
+		animation: blog9-fadeInUp 0.2s 1 linear forwards;
+		-moz-animation: blog9-fadeInUp 0.2s 1 linear forwards;
+		-webkit-animation: blog9-fadeInUp 0.2s 1 linear forwards;
+	}
+	@keyframes blog9-fadeInUp{
+		100% {
+			opacity: 1;
+			filter: alpha(opacity=1);
+		}
+	}
+	.blog9:hover .blog9-model div:first-child{
+		animation: blog9-first-child 0.1s 1 linear forwards;
+		-moz-animation: blog9-first-child 0.1s 1 linear forwards;
+		-webkit-animation: blog9-first-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog9-first-child{
+		100% {
+			font-size: 2vw;
+		}
+	}	
+	.blog9:hover .blog9-model div:last-child{
+		animation: blog9-last-child 0.1s 1 linear forwards;
+		-moz-animation: blog9-last-child 0.1s 1 linear forwards;
+		-webkit-animation: blog9-last-child 0.1s 1 linear forwards;
+	}
+	@keyframes blog9-last-child{
+		100% {
+			font-size: 1.5vw;
+		}
+	}
+	
+	/* 联系我 */
+	.contact{
+		background-color: rgba(61, 148, 152, 0.6);
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		bottom: 0px;
+		color: white;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		/*解决ios上滑动不流畅*/
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 25px;
+	}
+	.contact::-webkit-scrollbar {display:none}
+	.contact-children{
+		/* background: #B2B2B2; */
+		width: 80vw;
+		margin: 13vh auto;
+	}
+	.contact-children1{
+		/* background: #B2B2B2; */
+		width: 80vw;
+		height: 70vh;
+		margin: 5vh auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: left;
+		align-items: flex-start;
+	}
+	.contact-children1 a,.contact-children1 a:hover{
+		text-decoration: none;
+		color: white;
+	}
+	.contact-children2-ch{
+		width: 45%;
+		height: 95%;
+		/* background-color: red; */
+		float: left;
+		margin-right: 4.9vh;
+		margin-bottom: 2vh;
+	}
+	.contact-children2-ch table{
+		font-size: 2.3vh;
+	}
+	.form-group input,.form-group textarea,.form-group button{
+		font-size: 2vh;
+	}
+	/* 地址 */
+	.address{
+		background-color: rgba(107, 105, 213, 0.6);
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		bottom: 0px;
+		color: white;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		/*解决ios上滑动不流畅*/
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 25px;
+	}
+	.address::-webkit-scrollbar {display:none}
+	.address-children{
+		/* background: #B2B2B2; */
+		width: 80vw;
+		margin: 5vh auto;
+	}
+	.address-children1{
+		/* background: #B2B2B2; */
+		width: 80vw;
+		height: 65vh;
+		margin: 5vh auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: left;
+		align-items: flex-start;
+	}
+	.address-children2-ch{
+		width: 100%;
+		height: 95%;
+		/* background-color: red; */
+		float: left;
+		/* margin-right: 4.9vh; */
+		margin-bottom: 2vh;
+	}
+	/* 博客导航 */
+	.blog1-model,.blog2-model,.blog3-model,.blog4-model,.blog5-model,.blog6-model,.blog7-model,.blog8-model,.blog9-model{
+		background:rgba(55, 56, 56, 0.7);
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+	
+	.blog1-model div:first-child,.blog2-model div:first-child,.blog3-model div:first-child,.blog4-model div:first-child,.blog5-model div:first-child,.blog6-model div:first-child,.blog7-model div:first-child,.blog8-model div:first-child,.blog9-model div:first-child{
+		font-size: 0vw;
+	}
+	.blog1-model div:last-child,.blog2-model div:last-child,.blog3-model div:last-child,.blog4-model div:last-child,.blog5-model div:last-child,.blog6-model div:last-child,.blog7-model div:last-child,.blog8-model div:last-child,.blog9-model div:last-child{
+		font-size: 0vw;
+	}
+}
+
+/* 二维码弹出层 */
+#outerdiv{
+	position:fixed;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0.7);
+	z-index:2;
+	width:100%;
+	height:100%;
+	display:none;
+}
+#innerdiv{
+	width:100%;
+	height: 100%;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 简介下载按钮 */
+.about-download{
+	width: 16.9vh;
+	height: 5vh;
+	float: left;
+	margin-right: 5vh;
+	border: 1px solid white;
+}
+
+.about-download-img{
+	background: url(../img/indexImg/download.png) no-repeat;
+	background-size: 3.5vh 3.5vh;
+	background-position-x: left;
+	background-position-y: center;
+	width: 15.8vh;
+	height: 5vh;
+	margin-left: .8vh;
+	display: inline-block;
+	line-height: 5vh;
+}
+
+.about a{
+	text-decoration:none;
+	color: white;
+}
+.about tr{
+	padding-top: 3vh;
+}
+.resume-work{
+	background: url(../img/indexImg/work.png) no-repeat left center;
+	margin-left: 1vw;
+	padding-left: 5vh;
+	background-size: 5vh;
+	width: 40vh;
+	height: 5vh;
+	line-height: 5vh;
+}
+.resume-education{
+	background: url(../img/indexImg/education.png) no-repeat left center;
+	margin-left: 1vw;
+	padding-left: 5vh;
+	background-size: 5vh;
+	width: 40vh;
+	height: 5vh;
+	line-height: 5vh;
+}
+.my-contacts{
+	background: url(../img/indexImg/contact.png) no-repeat left center;
+	margin-left: 1vw;
+	padding-left: 5vh;
+	background-size: 5vh;
+	width: 40vh;
+	height: 5vh;
+	line-height: 5vh;
+}
+.my-address{
+	background: url(../img/indexImg/dz-b.png) no-repeat left center;
+	margin-left: 1vw;
+	padding-left: 5vh;
+	background-size: 5vh;
+	width: 40vh;
+	height: 5vh;
+	line-height: 5vh;
+}
+.message-me{
+	background: url(../img/indexImg/message.png) no-repeat left center;
+	margin-left: 1vw;
+	padding-left: 5vh;
+	background-size: 5vh;
+	width: 40vh;
+	height: 5vh;
+	line-height: 5vh;
+}
+.resume-children2-info{
+	width: 95%;
+	margin-left: 1vw;
+	height: 30%;
+	/* background-color: #009E94; */
+	border-left:3px solid white;
+	display: absolute;
+	/* text-align: left; */
+}
+.resume-children2-info-radio {
+	    background: #fff none repeat scroll 0 0;
+	    border: 5px solid #2d7d9a;
+	    border-radius: 50px;
+	    content: "";
+	    height: 25px;
+	    width: 25px;
+	    left: -14px;
+	    position: relative;
+	    top: -8px;
+	    z-index: 1;
+	}
+
+.close-about,.close-resume,.close-contact,.close-address,.close-blog{
+	background: url(../img/indexImg/close.png) no-repeat;
+	background-size: 100%;
+	background-position-x: left;
+	background-position-y: center;
+	width: 3.9vh;
+	height: 3.9vh;
+	position: fixed;
+	top: 3vh;
+	right: 2vh;
+}
+
+.comment-bubble-left {
+	width: 0;
+	height: 0;
+	right: 100%;
+	position: absolute;
+	border-top: 0px solid transparent;
+	border-right: 20px solid rgba(254, 254, 255, 0.9);
+	border-bottom: 10px solid transparent;
+}  
+
+.contact-phone{
+	background: url(../img/indexImg/phone.png) no-repeat left center;
+	margin-left: 1vw;
+	padding-left: 5vh;
+	background-size: 3vh;
+	width: 40vh;
+	height: 5vh;
+	line-height: 5vh;
+}
+.contact-message{
+	background: url(../img/indexImg/message-white.png) no-repeat left center;
+	margin-left: 1vw;
+	padding-left: 5vh;
+	background-size: 3vh;
+	width: 40vh;
+	height: 5vh;
+	line-height: 5vh;
+}
+
+.contact-address{
+	background: url(../img/indexImg/dz.png) no-repeat left center;
+	margin-left: 1vw;
+	padding-left: 5vh;
+	background-size: 3vh;
+	width: 40vh;
+	height: 5vh;
+	line-height: 5vh;
+}
+.contact-left-bottom-icon{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	width: 100%;
+	height: 9vh;
+	/* background-color: yellow; */
+}
+.contact-left-bottom-icon-children1{
+	background: url(../img/indexImg/wechat.png) no-repeat;
+	background-size: 88%;
+	width: 6%;
+	height: 100%;
+	margin-left: 1vh;
+}
+.contact-left-bottom-icon-children2{
+	background: url(../img/indexImg/dingding.png) no-repeat;
+	background-size: 88%;
+	width: 6%;
+	height: 100%;
+	margin-left: 2vh;
+}
+.contact-left-bottom-icon-children3{
+	background: url(../img/indexImg/qq.png) no-repeat;
+	background-size: 88%;
+	width: 6%;
+	height: 100%;
+	margin-left: 2vh;
+}
+.contact-left-bottom-icon-children4{
+	background: url(../img/indexImg/github.png) no-repeat;
+	background-size: 88%;
+	width: 6%;
+	height: 100%;
+	margin-left: 2vh;
+}
+.contact-left-bottom-icon-children5{
+	background: url(../img/indexImg/gitee.png) no-repeat;
+	background-size: 88%;
+	width: 6%;
+	height: 100%;
+	margin-left: 2vh;
+}
+
+/* 地址 */
+#container {width:100%; height: 80%; } 
+.custom-input-card {
+	width: 22rem;
+	color: black;
+}
+.input-card{
+	margin-right:2.8vw;
+	color: black;
+}
+
+.custom-input-card .btn {
+	margin-right: 1rem;
+}
+
+.custom-input-card .btn:last-child {
+	margin-right: 0;
+}
+
+.info-title {
+	color: white;
+	font-size: 14px;
+	background-color: #25A5F7;
+	line-height: 26px;
+	padding: 0px 0 0 6px;
+	font-weight: lighter;
+	letter-spacing: 1px
+}
+
+.info-content {
+	font: 12px Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial;
+	padding: 4px;
+	color: #666666;
+	line-height: 23px;
+}
+
+.info-content img {
+	float: left;
+	margin: 3px;
+}
+
+.amap-info-combo .keyword-input{
+	height: 25px;
+	border-radius: 2px 0 0 2px;
+}
+.status-origin{
+	color: black;
+}
+.info-windows{
+	color: black;
+	padding-top: 2vh;
+	padding-left: 12vh;
+	border-radius: 5%;
+}
+/* 博客图 */
+.blog1{
+	background: url(../img/indexImg/blog1.jpg) no-repeat;
+	background-size: 101% 100%;
+}
+.blog2{
+		background: url(../img/indexImg/blog2.jpg) no-repeat;
+		background-size: 101% 100%;
+}
+.blog3{
+	background: url(../img/indexImg/blog3.jpg) no-repeat;
+	background-size: 101% 100%;
+}
+.blog4{
+	background: url(../img/indexImg/blog4.jpg) no-repeat;
+	background-size: 101% 100%;
+}
+.blog5{
+	background: url(../img/indexImg/blog5.jpg) no-repeat;
+	background-size: 101% 100%;
+}
+.blog6{
+	background: url(../img/indexImg/blog6.jpg) no-repeat;
+	background-size: 101% 100%;
+}
+.blog7{
+	background: url(../img/indexImg/blog7.jpg) no-repeat;
+	background-size: 101% 100%;
+}
+.blog8{
+	background: url(../img/indexImg/blog8.jpg) no-repeat;
+	background-size: 101% 100%;
+}
+
+.blog9{
+	background: url(../img/indexImg/blog1.jpg) no-repeat;
+	background-size: 101% 100%;
+}

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no"> -->
+<!--		<meta http-equiv="Expires" content="0">-->
+<!--		<meta http-equiv="Pragma" content="no-cache">-->
+<!--		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">-->
+<!--		<meta http-equiv="Cache" content="no-cache">-->
+		<title>Kuhn-Lu的主页</title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
+		<script src="js/jquery-1.10.2.min.js"></script>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="main-left div1">
+				<div class="left-top"></div>
+				<div class="left-bottom">
+					<div class="left-bottom-content">
+						<p>Kuhn-Lu<br>热爱可抵漫长岁月</p>
+					</div>
+					<div class="left-bottom-icon">
+						<div class="left-bottom-icon-children1" img-data="img/indexImg/add-wechat.jpg"></div>
+						<div class="left-bottom-icon-children2" img-data="img/indexImg/add-dingding.jpg"></div>
+						<div class="left-bottom-icon-children3" img-data="img/indexImg/add-qq.jpg"></div>
+						<div class="left-bottom-icon-children4" onclick="window.open('https://github.com/lukunhong?tab=stars')"></div>
+						<div class="left-bottom-icon-children5" onclick="window.open('https://gitee.com/lukunhong')"></div>
+					</div>
+				</div>
+			</div>
+			<div class="main-right div1">
+				<div class="children-right children1">
+					<div class="children1-img"><span>简介</span></div>
+				</div>
+				<div class="children-right children2">
+					<div class="children2-img"><span>履历</span></div>
+				</div>
+				<div class="children-right children3" onclick="blogClick()">
+					<div class="children3-img"><span>博客</span></div>
+				</div>
+				<div class="children-right children4" onclick="alert('敬请期待！');">
+					<div class="children4-img"><span>服务</span></div>
+				</div>
+				<div class="children-right children5">
+					<div class="children5-img"><span>地址</span></div>
+				</div>
+				<div class="children-right children6">
+					<div class="children6-img"><span>联系</span></div>
+				</div>
+			</div>
+		</div>
+		<!-- 二维码弹出层 -->
+		<div id="outerdiv">
+			　　<div id="innerdiv">
+				　　　　<img id="bigimg" src="" />
+				　　</div>
+		</div>
+		
+		<!-- 简介--给container外层加一个div（container-wrapper）进一步兼容隐藏滚动条 -->
+		<div style="overflow: hidden;">
+		<!-- 简介 -->
+			<div class="about" style="display: none;">
+				<div class="close-about"></div>
+				<div class="about-children1" style="margin-top: 10vh;">
+					<h1 style="border-left: 3px solid white;color: white;font-weight: 300;">&nbsp;简介</h1>
+					<h4 style="border-left: 3px solid white;color: white;">
+						&nbsp;&nbsp;My Introduction
+					</h4>
+					<div class="about-left-top"></div>
+					<div class="about-right" style="margin-top: 4.5vh;">
+						<p style="line-height: 5vh;">
+							我的英文名是 Kuhn Lu
+						</p>
+						<p>
+							我是一个IT Developer，今年26岁，来自中国福建， 我喜欢新鲜事物，喜欢下厨、音乐、电竞游戏，动手能力和集体荣誉感比较强。 我的人生格言是：读万卷书行万里路，活到老学到老。这个世界是我的学校，学自己之所想所爱，自由的身心能让我成为一个一直朝前行走的行者。 如果你想跟我交个朋友，欢迎留言给我。
+						</p>
+						<br>
+						<div class="about-download" onclick="window.open('./img/indexImg/my-resume.png')">
+							<div class="about-download-img">
+								&emsp;&emsp;&nbsp;下载简历</div>
+						</div>
+					<div>
+					</div>
+					</div>
+				</div>
+				<div class="about-children2">
+					<div class="about-children2-ch">
+						<h2 style="border-left: 3px solid white;color: white;font-weight: 300;margin-bottom: 2vh;">&nbsp;基本资料</h2>
+						<table style="width: 100%;border-collapse:separate; border-spacing:0px 15px;">
+							<tr><td style="width: 20%;">姓名</td>
+								<td style="width: 3.3%;">:</td><td>卢坤洪</td>
+							</tr>
+							<tr><td>生日</td>
+								<td>:</td><td>1995年04月01日</td>
+							</tr>
+							<tr><td>电话</td>
+								<td>:</td><td>
+								<a href="tel:+86-17759513995">17759513995</a></td>
+							</tr>
+							<tr><td>邮箱</td>
+								<td>:</td><td>lukunhong54@foxmail.com</td>
+							</tr>
+							<tr><td>地址</td>
+								<td>:</td><td>福建省漳州市平和县霞寨镇</td>
+							</tr>
+						</table>
+					</div>
+					<div class="about-children2-ch">
+						<h2 style="border-left: 3px solid white;color: white;font-weight: 300;margin-bottom: 2vh;">&nbsp;Self-evaluation</h2>
+							<table style="width: 100%;border-collapse:separate; border-spacing:0px 15px;">
+								<tr>
+									<td>性格外向，但属于思考型，待人友好，为人真诚谦虚.</td>
+								</tr>
+								<tr>
+									<td>阳光且积极，喜欢接受新的事物，喜欢思考，偶尔会冒出一些创新.</td>
+								</tr>
+								<tr>
+									<td>喜欢下厨、音乐、电竞游戏，动手能力和集体荣誉感比较强.</td>
+								</tr>
+								<tr>
+									<td>具备良好的沟通能力和团队精神，能与团队成员充分配合发挥团队优势.</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		<!--履历 -->
+		<div style="overflow: hidden;">
+			<div class="resume" style="display: none;">
+				<div class="close-resume"></div>
+				<div class="resume-children" style="margin-top: 10vh;">
+					<h1 style="border-left: 3px solid white;color: white;font-weight: 300;">&nbsp;履历</h1>
+					<h4 style="border-left: 3px solid white;color: white;">
+						&nbsp;&nbsp;My Resume
+					</h4>
+
+				</div>
+				<div class="resume-children1">
+					<div class="resume-children2-ch">
+						<h2 style="border-left: 3px solid white;color: white;font-weight: 300;margin-bottom: 5vh;">
+							<div class="resume-work">&nbsp;工作经历</div>
+							</h2>
+						<div class="resume-children2-info">
+							<div class="resume-children2-info-radio"></div>
+							<div class="comment-bubble">
+								<div class="comment-bubble-left"></div>
+								2018 - NOW
+							</div>
+							<br><br>
+							<p>&emsp;&emsp;&emsp;PHP开发工程师</p>
+							<p>&emsp;&emsp;&emsp;&nbsp;┗ 广东支付通科技有限公司</p>
+						</div>
+						<div class="resume-children2-info">
+							<div class="resume-children2-info-radio"></div>
+							<div class="comment-bubble">
+								<div class="comment-bubble-left"></div>
+								2017 - 2018
+							</div>
+							<br><br>
+							<p>&emsp;&emsp;&emsp;PHP开发实习</p>
+							<p>&emsp;&emsp;&emsp;&nbsp;┗ 厦门万策智业科技有限公司</p>
+						</div>
+					</div>
+					<div class="resume-children2-ch">
+						<h2 style="border-left: 3px solid white;color: white;font-weight: 300;margin-bottom: 5vh;">
+							<div class="resume-education">&nbsp;教育经历</div>
+						</h2>
+						<div class="resume-children2-info">
+							<div class="resume-children2-info-radio"></div>
+							<div class="comment-bubble">
+								<div class="comment-bubble-left"></div>
+								2014 - 2018
+							</div>
+							<br><br>
+							<p>&emsp;&emsp;&emsp;大学本科 - 泉州师范学院</p>
+							<!-- <p>&emsp;&emsp;&emsp;┗ 泉州师范学院</p> -->
+						</div>
+						<div class="resume-children2-info">
+							<div class="resume-children2-info-radio"></div>
+							<div class="comment-bubble">
+								<div class="comment-bubble-left"></div>
+								2011 - 2014
+							</div>
+							<br><br>
+							<p>&emsp;&emsp;&emsp;中学 - 平和正兴学校</p>
+							<!-- <p>&emsp;&emsp;&emsp;┗ 平和正兴学校</p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!--博客 -->
+		<div style="overflow: hidden;">
+			<div class="blog" style="display: none;">
+				<div class="close-blog"></div>
+				<div class="blog-children" style="margin-top: 10vh;">
+					<h1 style="border-left: 3px solid white;color: white;font-weight: 300;">&nbsp;博客</h1>
+					<h4 style="border-left: 3px solid white;color: white;">
+						&nbsp;&nbsp;My Blogs
+					</h4>
+		
+				</div>
+				<div class="blog-children1">
+					<div class="blog-children2-ch blog1" onclick="window.open('https://blog1.lukh.top/home/index/list')">
+						<div class="blog1-model">
+							<div>个人博客V1.0</div>
+							<div>Blog System Version1.0</div>
+						</div>
+					</div>
+					<div class="blog-children2-ch blog2" onclick="alert('敬请期待')">
+						<div class="blog2-model">
+							<div>敬请期待</div>
+							<div>Stay Tuned</div>
+						</div>
+					</div>
+					<div class="blog-children2-ch blog3" onclick="alert('敬请期待')">
+						<div class="blog3-model">
+							<div>敬请期待</div>
+							<div>Stay Tuned</div>
+						</div>
+					</div>
+					<div class="blog-children2-ch blog4" onclick="alert('敬请期待')">
+						<div class="blog4-model">
+							<div>敬请期待</div>
+							<div>Stay Tuned</div>
+						</div>
+					</div>
+					<div class="blog-children2-ch blog5" onclick="alert('敬请期待')">
+						<div class="blog5-model">
+							<div>敬请期待</div>
+							<div>Stay Tuned</div>
+						</div>
+					</div>
+					<div class="blog-children2-ch blog6" onclick="alert('敬请期待')">
+						<div class="blog6-model">
+							 <div>敬请期待</div>
+							 <div>Stay Tuned</div>
+						</div>
+					</div>
+					<div class="blog-children2-ch blog7" onclick="alert('敬请期待')">
+						<div class="blog7-model">
+							<div>敬请期待</div>
+							<div>Stay Tuned</div>
+						</div>
+					</div>
+					<div class="blog-children2-ch blog8" onclick="alert('敬请期待')">
+						<div class="blog8-model">
+							<div>敬请期待</div>
+							<div>Stay Tuned</div>
+						</div>
+					</div>
+					<div class="blog-children2-ch blog9" onclick="alert('敬请期待')">
+						<div class="blog9-model">
+							<div>敬请期待</div>
+							<div>Stay Tuned</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 联系我 -->
+		<div style="overflow: hidden;">
+			<div class="contact" style="display: none;">
+				<div class="close-contact"></div>
+				<div class="contact-children" style="margin-top: 10vh;">
+					<h1 style="border-left: 3px solid white;color: white;font-weight: 300;">&nbsp;联系我</h1>
+					<h4 style="border-left: 3px solid white;color: white;">
+						&nbsp;&nbsp;My Contacts
+					</h4>
+				</div>
+				<div class="contact-children1">
+					<div class="contact-children2-ch">
+						<h2 style="border-left: 3px solid white;color: white;font-weight: 300;margin-bottom: 5vh;">
+						<div class="my-contacts">&nbsp;我的联系方式</div>
+						</h2>
+						<table style="width: 100%;border-collapse:separate; border-spacing:0px 25px;">
+						<!-- 	<tr>
+								<td style="width: 20%;" >姓名</td>
+								<td>卢坤洪</td>
+							</tr> -->
+							<tr>
+								<td style="width: 20%;" class="contact-phone"></td>
+								<td><a href="tel:+86-17759513995" style="">17759513995</a></td>
+							</tr>
+							<tr>
+								<td class="contact-message"></td>
+								<td>lukunhong54@foxmail.com</td>
+							</tr>
+							<tr>
+								<td class="contact-address"></td>
+								<td>福建省漳州市平和县霞寨镇</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="contact-left-bottom-icon">
+										<div class="contact-left-bottom-icon-children1" img-data="img/indexImg/add-wechat.jpg"></div>
+										<div class="contact-left-bottom-icon-children2" img-data="img/indexImg/add-dingding.jpg"></div>
+										<div class="contact-left-bottom-icon-children3" img-data="img/indexImg/add-qq.jpg"></div>
+										<div class="contact-left-bottom-icon-children4" onclick="window.open('https://github.com/lukunhong?tab=stars')"></div>
+										<div class="contact-left-bottom-icon-children5" onclick="window.open('https://gitee.com/lukunhong')"></div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="contact-children2-ch">
+						<h2 style="border-left: 3px solid white;color: white;font-weight: 300;margin-bottom: 5vh;">
+							<div class="message-me">&nbsp;发信息给我</div>
+						</h2>
+						<form class="form-horizontal" role="form">
+						  <div class="form-group">
+						    <div class="col-sm-10">
+						      <input type="text" class="form-control"
+							   id="name" placeholder="您的姓名">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <div class="col-sm-10">
+						      <input type="text" class="form-control" 
+							  id="email" placeholder="您的邮箱">
+						    </div>
+						  </div>
+						  <div class="form-group">
+								<div class="col-sm-10">
+									<textarea class="form-control" rows="3" placeholder="您想说的话"></textarea>
+								</div>
+						  </div>
+						  <div class="form-group">
+							<div class="col-sm-10">
+								 <button type="button"
+								 style="background: rgba(61, 148, 152,0.1);border: 1px solid white;color: white;"
+								  class="btn btn-primary" onclick="sendMe()">&emsp;发送&emsp;</button>
+							</div>
+						  </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 地址 -->
+		<div style="overflow: hidden;">
+			<div class="address" style="display: none;">
+				<div class="close-address"></div>
+				<div class="address-children" style="margin-top: 10vh;">
+					<h1 style="border-left: 3px solid white;color: white;font-weight: 300;">&nbsp;定位</h1>
+					<h4 style="border-left: 3px solid white;color: white;">
+						&nbsp;&nbsp;My Location
+					</h4>
+				</div>
+				<div class="address-children1">
+					<div class="address-children2-ch">
+						<h2 style="border-left: 3px solid white;color: white;font-weight: 300;margin-bottom: 5vh;">
+						<div class="my-address">&nbsp;我的所在地址</div>
+						</h2>
+						<div id="container"></div>
+						<div class="input-card custom-input-card">
+						    <h4>导航条</h4>
+						       <div class="input-item">
+						            <input type="button" class="btn" value="综合导航" onClick="infowindow1.open(map,lnglat)"/>
+						            <input type="button" class="btn" value="在附近找" onClick="infowindow2.open(map,lnglat)"/>
+						            <input type="button" class="btn" value="这里出发" onClick="infowindow3.open(map,lnglat)"/>
+						        </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/myself.js"></script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=你申请的key&plugin=AMap.AdvancedInfoWindow"></script>
+<script type="text/javascript">
+    //初始化地图对象，加载地图
+	var lnglat = [113.326103,23.180731];
+	var map = new AMap.Map('container', {
+		// resizeEnable: true,
+		center: lnglat,
+		zoom: 13
+	});
+	  var marker = new AMap.Marker({
+	        position: lnglat
+	    });
+	    marker.setMap(map);
+	
+	    var content = '<div class="info-title">我的地址</div><div class="info-content">' +
+			 '<img src="img/indexImg/myself.jpeg" style="width:68px;height:68px;border-radius:5%;">' +
+	        '<div class="info-windows">微&emsp;信：Kuhn-Lu<br/>联系人：卢坤洪</idv>' +
+	        '</div>';
+	    var infowindow1 = new AMap.AdvancedInfoWindow({
+	        content: content,
+	        offset: new AMap.Pixel(0, -30)
+	    });
+		    var infowindow2 = new AMap.AdvancedInfoWindow({
+		        content: content,
+		        asOrigin: false,
+		        asDestination: false,
+		        offset: new AMap.Pixel(0, -30)
+		    });
+		    var infowindow3 = new AMap.AdvancedInfoWindow({
+		        content: content,
+		        placeSearch: false,
+		        asDestination: false,
+		        offset: new AMap.Pixel(0, -30)
+		    });
+		// infowindow1.open(map,lnglat)
+</script>
+<script>
+	document.write("<s"+"cript type='text/javascript' src='js/myself.js?"+Math.random()+"'></scr"+"ipt>");
+</script>
